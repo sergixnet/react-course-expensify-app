@@ -1,7 +1,6 @@
 import moment from 'moment';
 import expensesReducer from '../../reducers/expenses';
 import expenses from '../fixtures/expenses';
-import createMockStore from 'redux-mock-store';
 
 test('should set default state', () => {
   const state = expensesReducer(undefined, { type: '@@INIT' });
