@@ -7,7 +7,7 @@ import {
 } from '../../actions/filters';
 import moment from 'moment';
 
-test('sholud generate set start date action object', () => {
+test('should generate set start date action object', () => {
   const action = setStartDate(moment(0));
   expect(action).toEqual({
     type: 'SET_START_DATE',
@@ -15,7 +15,7 @@ test('sholud generate set start date action object', () => {
   });
 });
 
-test('sholud generate set end date action object', () => {
+test('should generate set end date action object', () => {
   const action = setEndDate(moment(0));
   expect(action).toEqual({
     type: 'SET_END_DATE',
